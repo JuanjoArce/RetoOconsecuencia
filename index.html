@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Verdad o Consecuencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Juego de Verdad o Consecuencia</h1>
+        <div id="participants-section">
+            <h2>Agregar Participantes</h2>
+            <input type="text" id="participant-input" placeholder="Nombre del participante">
+            <button id="add-participant">Agregar Participante</button>
+            <ul id="participants-list"></ul>
+        </div>
+        <div id="truth-section">
+            <h2>Agregar Preguntas de Verdad</h2>
+            <input type="text" id="truth-input" placeholder="Pregunta de verdad">
+            <button id="add-truth">Agregar Verdad</button>
+            <ul id="truth-list"></ul>
+        </div>
+        <div id="dare-section">
+            <h2>Agregar Desafíos de Consecuencia</h2>
+            <input type="text" id="dare-input" placeholder="Desafío de consecuencia">
+            <button id="add-dare">Agregar Consecuencia</button>
+            <ul id="dare-list"></ul>
+        </div>
+        <button id="start-game">Iniciar Juego</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h1>¡Es tu turno!</h1>
+        <button id="roll-dice">Tirar el Dado</button>
+        <div id="result" style="display:none;">
+            <p id="participant-name"></p>
+            <p id="truth-or-dare"></p>
+            <button id="reveal">Revelar</button>
+            <p id="reveal-text" style="display:none;"></p>
+            <button id="back-to-home-after-reveal" style="display:none;">Volver al Home</button>
+        </div>
+        <button id="back-to-home">Volver al Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
